@@ -21,10 +21,12 @@
 
 - Funcionar localmente em um **Raspberry Pi** (ou computador acessível) com interface em **tablet**.
 
-**Motivação:**  
-Este projeto nasce da **fé em Jesus Cristo** e do **mandamento de ajudar a espalhar o Evangelho**, tornando a Palavra de Deus acessível
+<!-- QUADRO DE COLABORADORES -->
+<h2 style="color: #00529B; border-bottom: 1px solid #ddd; padding-bottom: 5px; margin-top: 30px;">👥 Colaboradores</h2>
 
-**Colaboradores**
-
-[Antônio A. Meloni]
-[Davi Pereira Souza]
+<div style="border: 2px solid #00529B; background-color: #e6f0fa; padding: 20px; border-radius: 10px; max-width: 400px; margin: 20px auto; text-align: left;">
+  <ul style="list-style-type: none; padding-left: 0; font-size: 1.1em; line-height: 1.8;">
+    <li>🖋️ <strong>Antônio A. Meloni</strong> – Integração com APIs e backend</li>
+    <li>🖋️ <strong>Davi Pereira Souza</strong> – Desenvolvimento da arquitetura e frontend</li>
+  </ul>
+</div>
