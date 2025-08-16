@@ -1,7 +1,6 @@
-# 📖 Bíblia Paróquia São João Batista
+# 📖 IA e Bíblia - Paróquia São João Batista
 
 ![Logo da Paróquia](logo_paroquia.png)  
-*Substitua `logo_paroquia.png` pelo arquivo real do logo da paróquia.*
 
 ## Sobre o Projeto
 **Bíblia Paróquia São João Batista** é um aplicativo interativo desenvolvido para a paróquia **São João Batista – Sertãozinho/SP**, com o objetivo de:  
