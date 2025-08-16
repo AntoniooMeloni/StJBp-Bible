@@ -35,7 +35,6 @@
 <h2 style="color: #00529B; border-bottom: 1px solid #ddd; padding-bottom: 5px; margin-top: 30px;">🙏 Motivação</h2>
 
 <div style="border: 2px solid #00529B; background-color: #e6f0fa; padding: 20px; border-radius: 10px; max-width: 600px; margin: 20px auto; text-align: left;">
-  <p><strong>Motivação:</strong><br>
   Este projeto nasce da <strong>fé em Jesus Cristo</strong> e do <strong>mandamento de ajudar a espalhar o Evangelho</strong>, tornando a Palavra de Deus acessível a todos.</p>
   
   <p><strong>Marcos 16,15:</strong><br>
