@@ -26,7 +26,7 @@
 
 <div style="border: 2px solid #00529B; background-color: #e6f0fa; padding: 20px; border-radius: 10px; max-width: 400px; margin: 20px auto; text-align: left;">
   <ul style="list-style-type: none; padding-left: 0; font-size: 1.1em; line-height: 1.8;">
-    <li>🖋️ <strong>Antônio A. Meloni</strong> – Integração com APIs e backend</li>
-    <li>🖋️ <strong>Davi Pereira Souza</strong> – Desenvolvimento da arquitetura e frontend</li>
+    <li> <strong>Antônio A. Meloni</strong></li>
+    <li><strong>Davi Pereira Souza</strong></li>
   </ul>
 </div>
