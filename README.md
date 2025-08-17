@@ -31,6 +31,7 @@
   </ul>
 </div>
 
+
 <!-- QUADRO DE MOTIVAÇÃO E VERSÍCULO -->
 <h2 style="color: #00529B; border-bottom: 1px solid #ddd; padding-bottom: 5px; margin-top: 30px;">🙏 Motivação</h2>
 
