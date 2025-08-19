@@ -1,0 +1,16 @@
+Se você estiver usando React puro (Vite, CRA, etc.), coloque as imagens dentro de public/ em vez de assets/.
+
+Exemplo: public/saints/padre_pio.jpg
+
+No código: <img src="/saints/padre_pio.jpg" alt="Padre Pio" />
+
+Se for Next.js, as imagens ficam em public/ também.
+
+Exemplo: public/parish/minha_paroquia.png
+
+No código: <Image src="/parish/minha_paroquia.png" width={400} height={300} alt="Minha Paróquia" />
+
+
+Se for React Native, não existe public/. Você precisa colocar em assets/ e importar direto: import padrePio from "../assets/saints/padre_pio.jpg";
+
+<Image source={padrePio} style={{ width: 200, height: 200 }} />

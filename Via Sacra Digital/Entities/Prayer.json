@@ -1,0 +1,35 @@
+{
+    "name": "Prayer",
+    "type": "object",
+    "properties": {
+        "name": {
+            "type": "string",
+            "description": "Nome da oração"
+        },
+        "content": {
+            "type": "string",
+            "description": "Texto da oração"
+        },
+        "category": {
+            "type": "string",
+            "enum": [
+                "oracao_diaria",
+                "rosario",
+                "novena",
+                "ladainha",
+                "tradicional",
+                "devocional"
+            ],
+            "description": "Categoria da oração"
+        },
+        "audio_url": {
+            "type": "string",
+            "description": "URL do áudio da oração"
+        }
+    },
+    "required": [
+        "name",
+        "content",
+        "category"
+    ]
+}

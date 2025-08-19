@@ -1,0 +1,35 @@
+{
+    "name": "DevotionalEntry",
+    "type": "object",
+    "properties": {
+        "date": {
+            "type": "string",
+            "format": "date",
+            "description": "Data da entrada devocional"
+        },
+        "reflection": {
+            "type": "string",
+            "description": "Reflexão pessoal do dia"
+        },
+        "bible_verse": {
+            "type": "string",
+            "description": "Versículo bíblico do dia"
+        },
+        "prayer_time_minutes": {
+            "type": "number",
+            "description": "Tempo de oração em minutos"
+        },
+        "gratitude": {
+            "type": "string",
+            "description": "Gratidão do dia"
+        },
+        "prayer_intentions": {
+            "type": "string",
+            "description": "Intenções de oração"
+        }
+    },
+    "required": [
+        "date",
+        "reflection"
+    ]
+}

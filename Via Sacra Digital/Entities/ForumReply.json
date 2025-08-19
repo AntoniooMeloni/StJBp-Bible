@@ -1,0 +1,23 @@
+{
+    "name": "ForumReply",
+    "type": "object",
+    "properties": {
+        "post_id": {
+            "type": "string",
+            "description": "ID da postagem"
+        },
+        "content": {
+            "type": "string",
+            "description": "Conteúdo da resposta"
+        },
+        "is_approved": {
+            "type": "boolean",
+            "default": true,
+            "description": "Se a resposta foi aprovada"
+        }
+    },
+    "required": [
+        "post_id",
+        "content"
+    ]
+}
