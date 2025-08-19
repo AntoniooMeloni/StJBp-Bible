@@ -1,0 +1,36 @@
+{
+    "name": "ForumPost",
+    "type": "object",
+    "properties": {
+        "title": {
+            "type": "string",
+            "description": "Título da postagem"
+        },
+        "content": {
+            "type": "string",
+            "description": "Conteúdo da postagem"
+        },
+        "category": {
+            "type": "string",
+            "enum": [
+                "doutrina",
+                "oracao",
+                "escrituras",
+                "testemunho",
+                "duvidas",
+                "geral"
+            ],
+            "description": "Categoria da postagem"
+        },
+        "is_approved": {
+            "type": "boolean",
+            "default": true,
+            "description": "Se a postagem foi aprovada"
+        }
+    },
+    "required": [
+        "title",
+        "content",
+        "category"
+    ]
+}
