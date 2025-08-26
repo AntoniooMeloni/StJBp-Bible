@@ -1,0 +1,178 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+  
+  :root {
+    /* 🎨 Paleta Principal Católica */
+    --theme-primary: #2C4C9C;    /* Azul Mariana - Nossa Senhora, paz e confiança */
+    --theme-secondary: #F7E6C4;  /* Bege Pergaminho - manuscritos antigos */
+    --theme-accent: #C6A550;     /* Dourado Litúrgico - realeza de Cristo e Maria */
+    --theme-accent-2: #2C4C9C;   /* Azul Mariana para botões e links */
+    --theme-text-dark: #1e293b;  /* Texto principal escuro */
+    --theme-text-light: #475569; /* Texto secundário */
+    --theme-bg: #F2F2F2;         /* Cinza Suave - fundo neutro que não cansa */
+    --theme-border: #e2e8f0;     /* Bordas suaves */
+    
+    /* 🌿 Paleta Secundária Católica */
+    --theme-white: #FFFFFF;      /* Branco Puro - pureza e luz */
+    --theme-hope: #3F7D3B;       /* Verde Esperança - vida eterna */
+    --theme-lent: #5B3B75;       /* Roxo Quaresmal - penitência */
+    --theme-martyr: #A02222;     /* Vermelho Rubro - mártires e Pentecostes */
+    --theme-parchment: #F7E6C4;  /* Bege Pergaminho - toque clássico */
+  }
+  
+  body {
+    background-color: var(--theme-bg);
+    color: var(--theme-text-dark);
+  }
+}
+
+@layer components {
+  .card {
+    background-color: var(--theme-white);
+    @apply rounded-lg shadow-md border;
+    border-color: var(--theme-border);
+    box-shadow: 0 4px 15px -3px rgba(44, 76, 156, 0.08), 0 4px 6px -2px rgba(44, 76, 156, 0.05);
+  }
+  
+  .btn-primary {
+    background-color: var(--theme-primary);
+    @apply hover:opacity-90 text-white font-medium py-2 px-4 rounded-md transition-all duration-200;
+  }
+  
+  .btn-secondary {
+    background-color: var(--theme-accent);
+    @apply hover:opacity-90 text-white font-medium py-2 px-4 rounded-md transition-all duration-200;
+  }
+  
+  .btn-hope {
+    background-color: var(--theme-hope);
+    @apply hover:opacity-90 text-white font-medium py-2 px-4 rounded-md transition-all duration-200;
+  }
+  
+  .btn-martyr {
+    background-color: var(--theme-martyr);
+    @apply hover:opacity-90 text-white font-medium py-2 px-4 rounded-md transition-all duration-200;
+  }
+
+  .scripture-font {
+    font-family: 'Crimson Text', 'Times New Roman', serif;
+    line-height: 1.8;
+  }
+
+  .catholic-shadow {
+    /* Sombra usando o Azul Mariana (#2C4C9C) com transparência */
+    box-shadow: 0 4px 15px -3px rgba(44, 76, 156, 0.12), 0 4px 6px -2px rgba(44, 76, 156, 0.08);
+  }
+  
+  .golden-accent {
+    color: var(--theme-accent);
+  }
+  
+  .text-mariana {
+    color: var(--theme-primary);
+  }
+  
+  .bg-parchment {
+    background-color: var(--theme-parchment);
+  }
+
+  /* Estilos para controles de áudio */
+  .audio-controls {
+    background: linear-gradient(135deg, var(--theme-primary) 0%, var(--theme-accent) 100%);
+    border-radius: 12px;
+    padding: 16px;
+    color: white;
+  }
+
+  .voice-selector {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    color: white;
+  }
+
+  .voice-selector option {
+    background: var(--theme-primary);
+    color: white;
+  }
+}
+
+/* 💍 Animações para o Easter Egg de Casamento */
+@keyframes fade-in-up {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+    opacity: 0.8;
+  }
+  25% {
+    transform: translateY(-10px) rotate(90deg);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-20px) rotate(180deg);
+    opacity: 0.6;
+  }
+  75% {
+    transform: translateY(-10px) rotate(270deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0px) rotate(360deg);
+    opacity: 0.8;
+  }
+}
+
+@keyframes confetti-fall {
+  0% {
+    transform: translateY(-20px) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) rotate(720deg);
+    opacity: 0;
+  }
+}
+
+@keyframes sparkle {
+  0%, 100% {
+    transform: scale(0) rotate(0deg);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1) rotate(180deg);
+    opacity: 1;
+  }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 1.5s ease-out forwards;
+  opacity: 0;
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-sparkle {
+  animation: sparkle 2s ease-in-out infinite;
+}
+
+.animate-confetti {
+  animation: confetti-fall linear infinite;
+}
